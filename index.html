@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firza Hadzami</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="icon" href="https://i.ibb.co/qpF6kN1/favicon-16x16.png" type="image/x-icon">
+  <style>
+    body, h1, h2, h3, h4, h5, h6, p {
+      font-family: "Montserrat", sans-serif;
+    }
+    .bgimg {
+      background: url('https://i.ibb.co/k4JR1fp/Foto-Formal-Firza-blck-white.jpg') no-repeat center/cover;
+      min-height: 100%;
+    }
+    /* Your custom styles here */
+    header {
+    height: 100vh; /* Tinggi header 100% dari viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width: 40%;">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display: none; padding-top: 150px; right: 0; z-index: 2;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding: 0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left: 40%;">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width: auto; right: 0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" id="home">
+    <h1 class="w3-jumbo"><b>Firza Hadzami</b></h1>
+    <p>IT Enthusiast.</p>
+    <img src="https://i.ibb.co/k4JR1fp/Foto-Formal-Firza-blck-white.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display: block; width: 60%; margin: auto;">
+    <img src="https://i.ibb.co/k4JR1fp/Foto-Formal-Firza-blck-white.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="https://onedrive.live.com/download?resid=96BAFD9958C2D5%212247&authkey=!AEo0blJs71l-qe8&em=2" class="w3-button w3-light-grey w3-padding-large w3-margin-top" download>
+      <i class="fa fa-download"></i> Download Resume
+    </a>
+    <div class="w3-padding-16">
+    <a href="#portfolio" class="w3-button w3-text-grey w3-hover-text-black" style="font-size: 32px;">
+      <i class="fa fa-chevron-down"></i>
+    </a>
+  </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-text-grey w3-content" id="portfolio">
+    <h2 class="w3-text-grey" data-aos="fade-up">My Portfolio</h2>
+    <hr class="w3-opacity" data-aos="fade-up">
+    <div class="w3-row-padding" style="margin: 0 -16px;">
+      <div class="w3-half">
+        <img src="https://i.ibb.co/y0jMGW1/Logo-no-bg.png" data-aos="fade-up" style="width: 100%;">
+        <p style="font-family: 'Montserrat', sans-serif;"data-aos="fade-up">TBKGMBR adalah Proyek layanan kumpulan penambangan Cryptocurrencies untuk koin IDNA (IDENA). Mengambil peran sebagai pemimpin tim, saya berhasil membantu menciptakan lingkungan kerja yang penuh kerjasama dan motivasi. Saya terlibat dalam mendorong kolaborasi tim yang akhirnya berkontribusi pada pertumbuhan yang signifikan.</p>
+      </div>
+      <div class="w3-half">
+        <img src="https://i.ibb.co/89PNFxf/image.png" data-aos="fade-up"style="width: 100%;">
+        <p style="font-family: 'Montserrat', sans-serif;"data-aos="fade-up">Idena adalah sebuah platform blockchain yang bertujuan untuk menciptakan jaringan terdesentralisasi yang unik, di mana identitas manusia dapat diverifikasi dalam suatu proses yang disebut "Proof-of-Person" (PoP).Idena juga menggabungkan beberapa konsep inovatif, termasuk "Proof-of-Personhood" (PoP), "Proof-of-Identity" (PoI), dan "Flip Challenge." Proses PoP melibatkan pembersihan data dan korelasi dalam acara Flip Challenge, di mana peserta diharuskan menjawab pertanyaan-pertanyaan yang menguji kemampuan manusia untuk memahami gambar dan konten visual.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-8" id="about">
+    <h2 data-aos="fade-up">About</h2>
+    <hr class="w3-opacity" data-aos="fade-up">
+    <p data-aos="fade-up">I am a graduate of Bekasi City 3 Vocational High School with a background in Computer and Network Engineering. My experience as a team leader in cryptocurrencies mining projects has trained computer operational skills, use of Microsoft Office, and teamwork. I have expertise in using MikroTik tools, basic understanding in programming languages ​​such as JavaScript, Golang, and C++, as well as a strong passion for developing a career as a Web Developer in the future. I am dedicated to continuing to learn and grow in achieving these goals.</p>
+    <h3 class="w3-padding-16" data-aos="fade-up">My Skills</h3>
+    <div data-aos="fade-up">
+      <p class="w3-wide">Go-lang, C++, JavaScript</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey" style="width: 20%;">Basic</div>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <p class="w3-wide">Microsoft Office</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey" style="width: 50%;">Intermediate</div>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <p class="w3-wide">MikroTik</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey" style="width: 30%;">Basic</div>
+      </div>
+    </div><br>
+
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-content w3-text-grey" id="contact"style="padding-top: 8px; padding-bottom: 64px;">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <hr class="w3-opacity" data-aos="fade-up">
+    <div class="w3-section">
+      <p data-aos="fade-up"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bekasi City, West Java</p>
+      <p data-aos="fade-up"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +62 81383563156</p>
+      <p data-aos="fade-up"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: firza.hdzami@gmail.com</p>
+      <p data-aos="fade-up"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i> Firza Hadzami</p>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+AOS.init();
+</script>
+</body>
+</html>
