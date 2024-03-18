@@ -9,21 +9,38 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #f0f0f0; /* Mengubah warna background */
+            font-family: Arial, sans-serif; /* Mengubah font */
+        }
+
+        h1 {
+            color: #333; /* Mengubah warna judul */
         }
 
         .board {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             grid-gap: 2px;
+            background-color: #333; /* Mengubah warna board */
+            border-radius: 5px; /* Melengkungkan sudut board */
+            padding: 10px; /* Menambah padding */
         }
         
         .cell {
             width: 100px;
             height: 100px;
-            border: 1px solid black;
+            border: 1px solid #666; /* Mengubah warna border */
             text-align: center;
             font-size: 2em;
             cursor: pointer;
+            background-color: #fff; /* Mengubah warna background cell */
+            color: #333; /* Mengubah warna teks cell */
+            transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
+        }
+
+        .cell:hover {
+            background-color: #ccc; /* Mengubah warna background saat hover */
+            color: #000; /* Mengubah warna teks saat hover */
         }
 
         .reset {
@@ -31,6 +48,21 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
+        }
+
+        #resetButton {
+            background-color: #333; /* Mengubah warna tombol reset */
+            color: #fff; /* Mengubah warna teks tombol reset */
+            border: none; /* Menghapus border tombol reset */
+            padding: 10px 20px; /* Menambah padding pada tombol reset */
+            font-size: 16px; /* Mengubah ukuran teks tombol reset */
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
+        }
+
+        #resetButton:hover {
+            background-color: #666; /* Mengubah warna tombol reset saat hover */
+            color: #fff; /* Mengubah warna teks tombol reset saat hover */
         }
     </style>
 </head>
@@ -53,7 +85,7 @@
         </div>
     </div>
 </body>
-<script> 
+<script>
 petak = ['', '', '', '', '', '', '', '', ''];
 player = 'X';
 gameselesai = false;
